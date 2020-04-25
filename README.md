@@ -29,4 +29,4 @@ and run the script. Row + total sums will be printed to the terminal.
 Total sum: 176
 ```
 In addition, a cropped, scaled down picture of the board is shown.
-![example output image](https://github.com/flojosch/cv2_takeiteasy/blob/master/cropped_screenshot_25.04.2020.png)
+![example output image](https://github.com/flojosch/cv2_takeiteasy/blob/master/examples/cropped_screenshot_25.04.2020.png)
