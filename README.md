@@ -12,7 +12,7 @@ You need:
 
 You will get the best results with **high resolution, top-view pictures** and **good lightning conditions**. Also keep in mind that the board should be completely visible. Simple choose the picture you want to analyze using 
 ```python
-#Import testbild
+#Import test picture
 image = cv2.imread("test1.jpg")
 ```
 and run the script. Row + total sums will be printed to the terminal. 
