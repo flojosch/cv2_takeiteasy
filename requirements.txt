@@ -1,0 +1,7 @@
+flask
+os
+cv2
+numpy
+imutils
+pprint
+werkzeug.utils
