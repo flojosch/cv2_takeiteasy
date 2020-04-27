@@ -35,4 +35,4 @@ You will see the total sum + complete row information. Row + total sums will als
 Total sum: 176
 ```
 In addition, a cropped, scaled down picture of the board is shown.
-![example output image](https://github.com/flojosch/cv2_takeiteasy/blob/master/examples/cropped_screenshot_25.04.2020.png)
+![example output image](https://github.com/flojosch/cv2_takeiteasy/blob/master/examples/example_2.png)
