@@ -1,0 +1,40 @@
+{% extends "public_template.html" %}
+
+{% block title %}Success{% endblock %}
+
+{% block main %}
+
+{% if sum %}
+  <h1 class="text-center">Total score: {{ sum }} &#x1F389;</h1>
+  <div class="row">
+    <div class="col-xs-12 well text-center">
+  {% for row in rows %}
+          <samp>{{ row }}</samp>
+  {% endfor %}
+    </div>
+  </div>
+  <img src="{{ url_for('send_file', filename=filename) }}" width=500 class="img-responsive center-block">
+  <br>
+  <div class="row">
+    <div class="col-xs-12 well text-center">
+      <a type="button" href="/upload-image" value="Try another" class="btn btn-primary">Try another</a>
+    </div>
+  </div>
+{% else %}
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <h1>Sorry, no board detected &#128542;</h1>
+      <h3>Please try a different picture</h3>
+      <br>
+      <img src="{{ url_for('send_file', filename=filename) }}" width=500 class="img-responsive center-block">
+      <br>
+      <a type="button" href="/upload-image" value="Try another" class="btn btn-primary">Try another</a>
+
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% endblock %}l
