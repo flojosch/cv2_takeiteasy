@@ -8,14 +8,20 @@ You need:
 * cv2
 * imutils
 * numpy
+* flask
 * pprint
 
-You will get the best results with **high resolution, top-view pictures** and **good lightning conditions**. Also keep in mind that the board should be completely visible. Simple choose the picture you want to analyze using 
+You will get the best results with **high resolution, top-view pictures** and **good lightning conditions**. Also keep in mind that the board should be completely visible. To get started, export the flask app:
 ```python
-#Import test picture
-image = cv2.imread("test1.jpg")
+export FLASK_APP=tie.py
 ```
-and run the script. Row + total sums will be printed to the terminal. 
+and start it:
+```python
+python -m flask run
+```
+
+You should see a simple upload page. JPG & PNG files are supported.
+You will see the total sum + complete row information. Row + total sums will also be printed to the terminal. 
 
 ```
 ['Vertical', 2, 9, 45]
