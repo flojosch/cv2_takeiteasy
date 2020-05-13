@@ -10,7 +10,7 @@ app = Flask(__name__)
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
 
-UPLOAD_FOLDER = '//Users/florianschuele/Documents/python/opencv/flask_test/static/img/uploads'
+UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.realpath(__file__)),"static/img/uploads")
 app.config["DEBUG"] = True
 app.config["IMAGE_UPLOADS"] = UPLOAD_FOLDER
 app.config["ALLOWED_IMAGE_EXTENSIONS"] = ["JPEG", "JPG", "PNG"]
